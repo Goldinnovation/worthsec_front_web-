@@ -4,6 +4,7 @@ import React from 'react'
 import{ useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import {LoginAPI} from '../../app/api/login/loginApi'
 
 const LoginComponent = () => {
     const router = useRouter();
@@ -65,7 +66,7 @@ const LoginComponent = () => {
           clearInterval(intervalId);
         }, 5000);
       }else{
-          throw new Error("Error on handleResError", error)
+          throw new Error("Error on handleResError")
       }
     
   

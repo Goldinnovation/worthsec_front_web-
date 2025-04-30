@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import SignUpAPI from "../../app/api/signup/signupAPI"
+import {SignUpAPI} from "../../app/api/signup/signupAPI"
 
 const SignUpComponents = () => {
   const [showmismatch, setshowmisMatch] = useState(false);
