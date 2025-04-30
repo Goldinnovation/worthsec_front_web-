@@ -11,6 +11,7 @@ const SignUpComponents = () => {
 
   const router = useRouter();
 
+
   const [register, setRegister] = useState({
     userName: "",
     userEmail: "",
@@ -44,7 +45,15 @@ const SignUpComponents = () => {
       return;
     }
 
-    await SignUpAPI(register)
+    const res = await SignUpAPI(register)
+    const data = await res.json();
+  
+    if (res.ok && data.message === "new user created") {
+      router.push("/");
+    } else if (!res.ok && data.message === "User already Exist") {
+      setUserexist(true);
+    } else {
+    }
    
   };
 

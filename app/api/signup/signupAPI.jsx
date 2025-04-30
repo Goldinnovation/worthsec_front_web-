@@ -3,9 +3,11 @@ import React from "react";
 
 export async function SignUpAPI(register) {
 
+ 
     try {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL
         const res = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL}/api/signUpAcc`,
+          `${apiUrl}/api/signUpAcc`,
           {
             method: "POST",
             headers: {
@@ -15,14 +17,7 @@ export async function SignUpAPI(register) {
           }
         );
   
-        const data = await res.json();
-  
-        if (res.ok && data.message === "new user created") {
-          router.push("/");
-        } else if (!res.ok && data.message === "User already Exist") {
-          setUserexist(true);
-        } else {
-        }
+      return res 
       } catch (error) {
         console.error("fetch failed");
       }

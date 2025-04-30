@@ -27,8 +27,9 @@ export default function Page() {
         return;
       }
       try {
-        
-        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/user/c/${username}`, {
+
+         const apiUrl = process.env.NEXT_PUBLIC_API_URL
+        const res = await fetch(`${apiUrl}/user/c/${username}`, {
           method: "GET",
           headers: {
             "Authorization": `Bearer ${token}`,
