@@ -13,6 +13,10 @@ const nextConfig: NextConfig = {
             key: 'Content-Security-Policy',  //avoid iframe embedding - clickjacking
             value: "frame-ancestors 'none';", //ensure script protections
           },
+          {
+            key: 'Strict-Transport-Security',
+            value: 'max-age=63072000; includeSubDomains; preload',
+          },
       
         ],
       },
