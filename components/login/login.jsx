@@ -29,6 +29,7 @@ const LoginComponent = () => {
         const token = data.token 
         localStorage.setItem("jwtToken", token);
       
+
   
         if (data.message2 === "Login Successful") {
           // const user = data.userNameData;

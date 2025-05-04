@@ -2,30 +2,10 @@
 import React from 'react'
 import { useEffect } from 'react'
 import Image from 'next/image'
-// import searchIcon from '@assets/search.png'
-// import styles from '@styles/usercontentstyle.module.css'
 import { useState } from 'react'
-// import Userlogout from '@utils/Userlogout'
-// import ProfilImageBtn from '@utils/homeUtils/ProfilImageBtn'
-// import DisplayProfiIImage from "@utils/homeUtils/DisplayProfiIImage";
-// import SearchInput from '@utils/searchutils/SearchInput'
-// import Sliderbar from '@utils/sliderutils/Sliderbar'
-// import UserFeedArea from '@/utils/userFeed/UserFeedArea'
-// import ExploreContent from './exploreComponents/explorePageStructure'
-// import UserfriendsSlide from '@utils/userfriendsutils/UserfriendsSlide'
-// import worldIcon from '@assets/worldIcon.svg'
-// import notificationIcon from '@assets/notifi.png'
-// import DisplayNotifications from '@utils/header/DisplayNotifications'
-// import SettingIcon  from '@assets/setting3d.png'
-// import MailIcon from '@assets/Mail3d.png'
-// import Search3dIcon from '@assets/search3d.png'
-// import style from "../styles/global.css"
-// import LeftnavBarContent from './Leftnavbar/navBarContent'
-// import UserMenu from './userMenu/userMenu'
-// import UploadGif from '@/utils/homeUtils/uploadGif'
-// import HeaderComponent from './Header/headerComponent'
-// import MainComponent from './main/mainComponent'
-
+import HeaderComponent from '../Header/headerComponent'
+import ExploreComponent from '../Explore/exploreComponent'
+import StoryComponent from '../Explore/Story/storyComponent'
 
 const UserComponent = () => {
 
@@ -137,36 +117,57 @@ const UserComponent = () => {
         display: "flex", 
         justifyContent: "center", 
         alignItems: "center",
-        flexDirection: "row"
+        flexDirection: "row",
+        gap: "1%"
 
      }}>
 
          <div style={{
-            backgroundColor: "black", 
+            // backgroundColor: "rgba(2, 11, 24, 0.51)", 
             height: "100%",
-            width: "3%",
+            width: "4%",
             borderTop: "1px solid grey",
             borderLeft: "1px solid grey", 
             borderBottom: "1px solid grey",
             borderRight: "1px solid grey", 
+            borderRadius: "7px"
+
 
 
          }}>
-            {/* <HeaderComponent/> */}
-            hello header
+            <HeaderComponent/>
+            {/* hello header */}
          </div>
          <div style={{
             // backgroundColor: "black", 
+            backgroundColor: "rgba(2, 11, 24, 0.51)", 
             height: "100%",
-            width: "97%",
-            // borderTop: "1px solid grey",
-            // borderRight: "1px solid grey", 
-            // borderBottom: "1px solid grey",
+            width: "70%",
+            borderTop: "1px solid grey",
+            borderLeft: "1px solid grey", 
+            borderBottom: "1px solid grey",
+            borderRight: "1px solid grey", 
+            borderRadius: "7px"
 
 
          }}>
-                {/* <MainComponent/> */}
-                main component
+            <ExploreComponent/>
+         </div>
+         <div style={{
+            backgroundColor: "rgba(2, 11, 24, 0.51)", 
+            height: "100%",
+            width: "26%",
+            borderTop: "1px solid grey",
+            borderLeft: "1px solid grey", 
+            borderBottom: "1px solid grey",
+            borderRight: "1px solid grey", 
+            borderRadius: "7px"
+
+        
+
+
+         }}>
+            <StoryComponent/>
          </div>
         
      </div>

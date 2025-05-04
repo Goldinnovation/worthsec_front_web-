@@ -83,7 +83,10 @@ const SignUpComponents = () => {
               height: "300px",
             }}
           >
-            <div>
+            <div style={{
+               color: "white"
+
+            }}>
               <h2>Sign Up</h2>
               <hr />
             </div>
@@ -250,7 +253,7 @@ const SignUpComponents = () => {
                 }}
               >
                 <p style={{
-                    colro: "white"
+                    color: "white"
                 }}>You have an Account ?</p>
                 <Link
                   href={"/"}

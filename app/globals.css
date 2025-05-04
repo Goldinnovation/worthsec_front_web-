@@ -21,14 +21,20 @@
 } 
 } */
 
+
+
 body{
   /* background-color: rgba(118, 111, 111, 0.492); */
 
-  /* background: linear-gradient(1deg, #000000, #000000bb, rgba(35, 32, 32, 0.447), #000000);
-  /* background: linear-gradient(1deg, #000000, #9e9494a6, rgba(17, 18, 18, 0.581), #0b0b0b)!; */
-  background-color: #00000021;
+  background: linear-gradient(1deg, #000000, #000000bb, rgba(35, 32, 32, 0.447), #000000);
+  /* background: linear-gradient(1deg, #000000, #9e9494a6, rgba(17, 18, 18, 0.581), #0b0b0b); */
   margin: 0; 
   padding: 0;
   box-sizing: border-box;
      
+}
+
+html, body{
+  height: 100%;
+  overflow: hidden;
 }

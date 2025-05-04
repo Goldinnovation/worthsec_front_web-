@@ -4,7 +4,7 @@ import React from "react";
 export async function LoginAPI(email, password) {
 
     try {
-        const res = await fetch(`${process.env.BACKEND_API_URL}/api/login-token`, {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/login-token`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json", // Set the content-type to JSON
