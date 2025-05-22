@@ -27,9 +27,9 @@ COPY . .
 
 
 
-ENV NEXT_PUBLIC_API_URL=https://orbitbackend.fly.dev
+# ENV NEXT_PUBLIC_API_URL=https://orbitbackend.fly.dev
 
-
+ENV NEXT_PUBLIC_API_URL=https://worthsec-back-web.fly.dev 
 
 # Next.js collects completely anonymous telemetry data about general usage.
 # Learn more here: https://nextjs.org/telemetry
